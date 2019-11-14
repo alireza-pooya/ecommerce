@@ -1,0 +1,63 @@
+a{
+  color: black;
+  text-decoration: black;
+}
+a:hover{
+  color: #333333;
+}
+.height{
+  height: 60px;
+  font-size: 22px;
+}
+.width{
+  width: 170px;
+}
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+input[type="password"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon input[type="text"] {
+  padding-left: 40px;
+}
+.inputWithIcon input[type="password"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  font-size: 25px;
+  position: absolute;
+  top: 12px;
+  padding: 9px 10px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+  font-size: 27px;
+}
+.inputWithIcon input[type="password"]:focus + i {
+  color: dodgerBlue;
+  font-size: 27px;
+}
+
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
