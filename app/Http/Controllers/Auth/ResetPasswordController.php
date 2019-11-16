@@ -39,7 +39,7 @@ class ResetPasswordController extends Controller
             'created_at'  =>   now()
         ]);
 
-        $link = url("resetpassword/checktoken?token={$passwordReset['token']}");
+        $link = url("checktoken?token={$passwordReset['token']}");
 
         Mail::to($passwordReset['email'])->send(new ResetPasswordMail($user,$link));
 

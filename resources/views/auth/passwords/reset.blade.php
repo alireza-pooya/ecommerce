@@ -13,6 +13,7 @@
             </div>
                 <form method="POST" action="{{ route('set_password') }}">
                     {{ csrf_field() }}
+                    <input type="hidden" name="token" value="{{ request('token') }}">
                     <h2 class="text-center m-5" style="font-size: 40px; font-weight: bold"><b>Enter Password</b></h2>
 
                     <div class="col-8 center mb-3 inputWithIcon">
